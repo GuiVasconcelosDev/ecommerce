@@ -29,13 +29,18 @@ public class Cliente {
 
     private String telefone;
 
+    @NotBlank(message = "A senha é obrigatória")
+    @Column(nullable = false)
+    private String senha;
+
     public Cliente() {}
 
-    public Cliente(String nome, String email, String cpf, String telefone) {
+    public Cliente(String nome, String email, String cpf, String telefone, String senha) {
         this.nome = nome;
         this.email = email;
         this.cpf = cpf;
         this.telefone = telefone;
+        this.senha = senha;
     }
 
     public Long getId() {
@@ -76,5 +81,13 @@ public class Cliente {
 
     public void setTelefone(String telefone) {
         this.telefone = telefone;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 }
