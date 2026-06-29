@@ -4,7 +4,6 @@ import br.com.guilhermedev.ecommerce.model.ItemPedido;
 import br.com.guilhermedev.ecommerce.dto.ItemPedidoRequest;
 import br.com.guilhermedev.ecommerce.dto.PedidoRequest;
 import br.com.guilhermedev.ecommerce.model.Cliente;
-import br.com.guilhermedev.ecommerce.model.ItemPedido;
 import br.com.guilhermedev.ecommerce.model.Pedido;
 import br.com.guilhermedev.ecommerce.model.Produto;
 import br.com.guilhermedev.ecommerce.repository.ClienteRepository;

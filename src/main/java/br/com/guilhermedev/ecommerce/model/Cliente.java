@@ -19,7 +19,7 @@ public class Cliente {
     private String nome;
 
     @NotBlank
-    @Email(message = "Informw um e-mail válido")
+    @Email(message = "Informe um e-mail válido")
     @Column(nullable = false, unique = true)
     private String email;
 
